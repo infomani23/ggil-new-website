@@ -1,0 +1,132 @@
+$primary: #11AA61;
+$primaryDark: #006337;
+
+.darkBG{
+    background-color: #2d2d2d;
+}
+.btn-secondary{
+    color: #ffffff;
+    &:hover{
+        color: #ffffff;
+    }
+}
+.primary-Bgclr{
+    background-color: #10B9C1;
+}
+.primaryDark-Bgclr{
+    background-color: #006337;
+}
+.secondary-clr{
+    color: #11AA61;
+}
+.secondary-Bgclr{
+    background-color: #11AA61;
+}
+.secondary-clr2{
+    color: #8DBD43;
+}
+.secondary-Bgclr2{
+    background-color: #8DBD43;
+}
+.footerAdrs{
+    display: flex;
+}
+.flexWrap{
+    flex-wrap: wrap;
+}
+.copyright {
+    a{
+        color: #ffffff;
+        transition: ease-in-out .4s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.whyWithusBox{
+    .text-secondary {
+        color: #0c502f !important;
+    }
+    .text-primary{
+        color: #597829 !important;
+    }
+    h1{
+        font-size: 60px !important;
+        @media (max-width: 767px) { 
+            font-size: 40px !important;
+        }
+    }
+    span{
+        @media (max-width: 767px) { 
+            font-size: 16px !important;
+        }
+    }
+}
+.aboutudBox{
+    h1{
+        color: #ffffff;
+    }
+    small{
+        color: #9eeda8;
+    }
+}
+.headerMenu{
+    .nav-link{
+        color: #2d2d2d !important;
+        &.active{
+            color: #3cb64b !important;
+        }
+    }
+}
+.homePageSider{
+    h1{
+        font-size: 45px;
+        @media (max-width: 767px) { 
+            font-size: 35px;
+         }
+    }
+}
+.hearInnerBanner{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: .3;
+    }
+    .slideInDown{
+        z-index: 1;
+        position: relative;
+    }
+    .breadcrumb {
+        z-index: 1;
+        position: relative;
+    }
+}
+.project-carousel{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: auto !important;
+    }
+}
+.whyWithusCnt{
+    @media (max-width: 991px) { 
+        order: 1;
+     }
+}
+.whyWithusBox{
+    @media (max-width: 991px) { 
+        order: 0;
+     }
+    img{
+        border-radius: 8px;
+        width: 100%;
+    }
+}
