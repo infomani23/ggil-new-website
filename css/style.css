@@ -717,4 +717,21 @@
   }
 }
 
+.my-custom-btn {
+  background-color:  #45b654; /* your custom background */
+  color: white; /* text color */
+  border: none;
 
+}
+
+my-custom-btn:hover {
+  background-color: #222/* darker shade on hover */
+}
+
+
+@media (max-width: 576px) {
+  img[alt="Green Ways Logo"] {
+    max-width: 180px;
+    top: 20px !important;
+  }
+}
