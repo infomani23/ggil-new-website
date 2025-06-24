@@ -618,8 +618,9 @@
 }
 
 
-/* Responsive tweaks */
-/* @media (max-width: 991.98px) {
+ /* Responsive tweaks  */
+
+@media (max-width: 991.98px) {
   .col-md-4 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -631,8 +632,8 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
-} */
-
+} 
+/*  */
 .project-carousel {
   display: flex;
   gap: 5rem;
@@ -695,23 +696,25 @@
 
 
 
-
-
-
-
-
 /* Mobile View */
 @media (max-width: 768px) {
   .project-carousel {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* makes it vertically centered */
+    padding: 20px; /* optional for spacing */
+    gap: 20px; /* add space between items */
+    min-height: 100vh; /* 200vh is usually too tall */
   }
 
   .project-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%; /* full width on small screen */
+    max-width: 500px; /* optional for content limit */
   }
 }
+
+
