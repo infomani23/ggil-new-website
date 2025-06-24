@@ -71,7 +71,6 @@ const bsCarousel = new bootstrap.Carousel(carousel, {
     }
   });
 
-
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -88,3 +87,10 @@ const bsCarousel = new bootstrap.Carousel(carousel, {
     
 })(jQuery);
 
+
+
+
+//footer
+
+
+document.getElementById("copyright-year").textContent = new Date().getFullYear();
