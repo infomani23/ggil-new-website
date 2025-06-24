@@ -690,9 +690,22 @@
 }
 
 .custom-hover-card:hover .btn {
-   background-color: #056438; /* darker blue */
-  box-shadow:  #056438;
+   background-color: #2d2d2d;/* darker blue */
+    box-shadow:  #056438;
+    color: #EEEEEE;
 }
+
+.my-custom-btn {
+  background-color:  #45b654; /* your custom background */
+  color: white; /* text color */
+  border: none;
+
+}
+
+my-custom-btn:hover {
+  background-color: #45b654; /* darker shade on hover */
+}
+
 
 
 
@@ -716,18 +729,6 @@
     max-width: 500px; /* optional for content limit */
   }
 }
-
-.my-custom-btn {
-  background-color:  #45b654; /* your custom background */
-  color: white; /* text color */
-  border: none;
-
-}
-
-my-custom-btn:hover {
-  background-color: #222/* darker shade on hover */
-}
-
 
 @media (max-width: 576px) {
   img[alt="Green Ways Logo"] {
