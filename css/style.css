@@ -619,7 +619,7 @@
 
 
 /* Responsive tweaks */
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .col-md-4 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -630,5 +630,88 @@
   .col-md-4 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+} */
+
+.project-carousel {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: wrap; 
+}
+
+.project-item {
+  position: relative;
+}
+
+.project-item img {
+  width: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.explore-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007BFF;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+
+.explore-btn:hover {
+  background-color: #0056b3;
+  opacity: 1;
+}
+
+.custom-hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.custom-hover-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0);
+}
+
+.custom-hover-card .btn {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-hover-card:hover .btn {
+   background-color: #056438; /* darker blue */
+  box-shadow:  #056438;
+}
+
+
+
+
+
+
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .project-carousel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* makes it vertically centered */
+  }
+
+  .project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
